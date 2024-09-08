@@ -1,0 +1,613 @@
+{
+	"folders": [
+		{
+			"name": "Liminal",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "C:\\Games\\Epic Games\\UE_5.4"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "Liminal Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Liminal",
+					"Win64",
+					"Debug",
+					"C:\\Games\\Projects\\Liminal\\Liminal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Games\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "Liminal Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Liminal",
+					"Win64",
+					"Debug",
+					"C:\\Games\\Projects\\Liminal\\Liminal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Liminal Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Games\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "Liminal Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"Liminal",
+					"Win64",
+					"Debug",
+					"C:\\Games\\Projects\\Liminal\\Liminal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Games\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "Liminal Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Liminal",
+					"Win64",
+					"DebugGame",
+					"C:\\Games\\Projects\\Liminal\\Liminal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Games\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "Liminal Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Liminal",
+					"Win64",
+					"DebugGame",
+					"C:\\Games\\Projects\\Liminal\\Liminal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Liminal Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Games\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "Liminal Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"Liminal",
+					"Win64",
+					"DebugGame",
+					"C:\\Games\\Projects\\Liminal\\Liminal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Games\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "Liminal Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Liminal",
+					"Win64",
+					"Development",
+					"C:\\Games\\Projects\\Liminal\\Liminal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Games\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "Liminal Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Liminal",
+					"Win64",
+					"Development",
+					"C:\\Games\\Projects\\Liminal\\Liminal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Liminal Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Games\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "Liminal Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"Liminal",
+					"Win64",
+					"Development",
+					"C:\\Games\\Projects\\Liminal\\Liminal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Games\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "Liminal Win64 Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Liminal",
+					"Win64",
+					"Test",
+					"C:\\Games\\Projects\\Liminal\\Liminal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Games\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "Liminal Win64 Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Liminal",
+					"Win64",
+					"Test",
+					"C:\\Games\\Projects\\Liminal\\Liminal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Liminal Win64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Games\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "Liminal Win64 Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"Liminal",
+					"Win64",
+					"Test",
+					"C:\\Games\\Projects\\Liminal\\Liminal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Games\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "Liminal Win64 Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Liminal",
+					"Win64",
+					"Shipping",
+					"C:\\Games\\Projects\\Liminal\\Liminal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Games\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "Liminal Win64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Liminal",
+					"Win64",
+					"Shipping",
+					"C:\\Games\\Projects\\Liminal\\Liminal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Liminal Win64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Games\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "Liminal Win64 Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"Liminal",
+					"Win64",
+					"Shipping",
+					"C:\\Games\\Projects\\Liminal\\Liminal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Games\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "LiminalEditor Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"LiminalEditor",
+					"Win64",
+					"Debug",
+					"C:\\Games\\Projects\\Liminal\\Liminal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Games\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "LiminalEditor Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"LiminalEditor",
+					"Win64",
+					"Debug",
+					"C:\\Games\\Projects\\Liminal\\Liminal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"LiminalEditor Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Games\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "LiminalEditor Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"LiminalEditor",
+					"Win64",
+					"Debug",
+					"C:\\Games\\Projects\\Liminal\\Liminal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Games\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "LiminalEditor Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"LiminalEditor",
+					"Win64",
+					"DebugGame",
+					"C:\\Games\\Projects\\Liminal\\Liminal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Games\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "LiminalEditor Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"LiminalEditor",
+					"Win64",
+					"DebugGame",
+					"C:\\Games\\Projects\\Liminal\\Liminal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"LiminalEditor Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Games\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "LiminalEditor Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"LiminalEditor",
+					"Win64",
+					"DebugGame",
+					"C:\\Games\\Projects\\Liminal\\Liminal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Games\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "LiminalEditor Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"LiminalEditor",
+					"Win64",
+					"Development",
+					"C:\\Games\\Projects\\Liminal\\Liminal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Games\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "LiminalEditor Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"LiminalEditor",
+					"Win64",
+					"Development",
+					"C:\\Games\\Projects\\Liminal\\Liminal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"LiminalEditor Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Games\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "LiminalEditor Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"LiminalEditor",
+					"Win64",
+					"Development",
+					"C:\\Games\\Projects\\Liminal\\Liminal.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Games\\Epic Games\\UE_5.4"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch Liminal (Debug)",
+				"request": "launch",
+				"program": "C:\\Games\\Projects\\Liminal\\Binaries\\Win64\\UnrealGame-Win64-Debug.exe",
+				"preLaunchTask": "Liminal Win64 Debug Build",
+				"args": [
+				],
+				"cwd": "C:\\Games\\Epic Games\\UE_5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Games\\Epic Games\\UE_5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Games\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"name": "Launch Liminal (DebugGame)",
+				"request": "launch",
+				"program": "C:\\Games\\Projects\\Liminal\\Binaries\\Win64\\UnrealGame-Win64-DebugGame.exe",
+				"preLaunchTask": "Liminal Win64 DebugGame Build",
+				"args": [
+				],
+				"cwd": "C:\\Games\\Epic Games\\UE_5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Games\\Epic Games\\UE_5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Games\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"name": "Launch Liminal (Development)",
+				"request": "launch",
+				"program": "C:\\Games\\Projects\\Liminal\\Binaries\\Win64\\UnrealGame.exe",
+				"preLaunchTask": "Liminal Win64 Development Build",
+				"args": [
+				],
+				"cwd": "C:\\Games\\Epic Games\\UE_5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Games\\Epic Games\\UE_5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Games\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"name": "Launch Liminal (Test)",
+				"request": "launch",
+				"program": "C:\\Games\\Projects\\Liminal\\Binaries\\Win64\\UnrealGame-Win64-Test.exe",
+				"preLaunchTask": "Liminal Win64 Test Build",
+				"args": [
+				],
+				"cwd": "C:\\Games\\Epic Games\\UE_5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Games\\Epic Games\\UE_5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Games\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"name": "Launch Liminal (Shipping)",
+				"request": "launch",
+				"program": "C:\\Games\\Projects\\Liminal\\Binaries\\Win64\\UnrealGame-Win64-Shipping.exe",
+				"preLaunchTask": "Liminal Win64 Shipping Build",
+				"args": [
+				],
+				"cwd": "C:\\Games\\Epic Games\\UE_5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Games\\Epic Games\\UE_5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Games\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"name": "Launch LiminalEditor (Debug)",
+				"request": "launch",
+				"program": "C:\\Games\\Epic Games\\UE_5.4\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-Debug.exe",
+				"preLaunchTask": "LiminalEditor Win64 Debug Build",
+				"args": [
+					"C:\\Games\\Projects\\Liminal\\Liminal.uproject"
+				],
+				"cwd": "C:\\Games\\Epic Games\\UE_5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Games\\Epic Games\\UE_5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Games\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"name": "Launch LiminalEditor (DebugGame)",
+				"request": "launch",
+				"program": "C:\\Games\\Epic Games\\UE_5.4\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-DebugGame.exe",
+				"preLaunchTask": "LiminalEditor Win64 DebugGame Build",
+				"args": [
+					"C:\\Games\\Projects\\Liminal\\Liminal.uproject"
+				],
+				"cwd": "C:\\Games\\Epic Games\\UE_5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Games\\Epic Games\\UE_5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Games\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"name": "Launch LiminalEditor (Development)",
+				"request": "launch",
+				"program": "C:\\Games\\Epic Games\\UE_5.4\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+				"preLaunchTask": "LiminalEditor Win64 Development Build",
+				"args": [
+					"C:\\Games\\Projects\\Liminal\\Liminal.uproject"
+				],
+				"cwd": "C:\\Games\\Epic Games\\UE_5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Games\\Epic Games\\UE_5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Games\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Win64 Development Build",
+				"program": "C:\\Games\\Epic Games\\UE_5.4\\Engine\\Build\\BatchFiles\\RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=C:\\Games\\Projects\\Liminal\\Liminal.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"console": "integratedTerminal",
+				"stopAtEntry": false,
+				"cwd": "C:\\Games\\Epic Games\\UE_5.4"
+			}
+		]
+	}
+}
