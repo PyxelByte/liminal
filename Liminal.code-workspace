@@ -3,10 +3,6 @@
 		{
 			"name": "Liminal",
 			"path": "."
-		},
-		{
-			"name": "UE5",
-			"path": "C:\\Games\\Epic Games\\UE_5.4"
 		}
 	],
 	"settings": {
